@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXOAR S.A. de C.V. | Innovación Tecnológica y Soluciones Empresariales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-cyan-400 flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-brand-500/20">
+                    N
+                </div>
+                <span class="text-xl font-black tracking-wider text-white">NEXOAR <span class="text-xs px-2 py-0.5 rounded bg-brand-500/20 text-brand-400 border border-brand-500/30">S.A. de C.V.</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="hover:text-brand-400 transition-colors">Inicio</a>
+                <a href="#servicios" class="hover:text-brand-400 transition-colors">Servicios</a>
+                <a href="#empresa" class="hover:text-brand-400 transition-colors">La Empresa</a>
+                <a href="#contacto" class="hover:text-brand-400 transition-colors">Contacto</a>
+            </nav>
+            <div>
+                <a href="#contacto" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm transition-all shadow-lg shadow-brand-600/30">
+                    Cotizar Proyecto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-brand-400 text-xs font-semibold mb-6">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Soluciones Tecnológicas e Infraestructura Avanzada</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                Impulsamos tu competitividad con <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-cyan-300">ingeniería y software</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto">
+                Desarrollo de aplicaciones web y móviles, consultoría tecnológica especializada, infraestructura y optimización del capital humano para empresas visionarias.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#servicios" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-all shadow-xl shadow-brand-600/20">
+                    Explorar Servicios <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                </a>
+                <a href="#contacto" class="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-semibold transition-all">
+                    Contactar Equipo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Servicios Grid -->
+    <section id="servicios" class="py-24 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Nuestras Capacidades</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Servicios especializados para el éxito empresarial</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Desarrollo de Software & Web</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Diseño, programación, implementación y mantenimiento de aplicaciones web, plataformas digitales y herramientas tecnológicas a la medida.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Servicios Técnicos & TI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Planeación, ejecución, supervisión y consultoría integral en materia de sistemas, procesos e infraestructura tecnológica avanzada.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="trending-up" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Asesoría en Inversiones</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Orientación estratégica, análisis financiero, estudios de factibilidad y estructuración de proyectos bajo la normatividad vigente.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Gestión de Capital Humano</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Reclutamiento, selección, capacitación, desarrollo organizacional y gestión optimizada de talento y nóminas corporativas.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="landmark" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Licitaciones & Concursos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Participación experta en licitaciones públicas y privadas con instancias federales, estatales y municipales.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="globe" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Comercio & Operaciones</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ejecución de actos de comercio, importación, exportación y contratos financieros especializados en México.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section id="empresa" class="py-24 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Compromiso y Solidez</h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Constituidos para liderar la transformación digital</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        <strong>NEXOAR S.A. de C.V.</strong> es una sociedad mercantil constituida bajo estrictos estándares legales en Hidalgo, México. Contamos con un órgano de administración sólido enfocado en brindar soluciones de alto valor agregado a empresas y personas físicas.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-400 mt-1 shrink-0"></i>
+                            <p class="text-slate-300 text-sm"><strong>Domicilio Social:</strong> Mineral de la Reforma, Estado de Hidalgo.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-400 mt-1 shrink-0"></i>
+                            <p class="text-slate-300 text-sm"><strong>Liderazgo:</strong> Administración general orientada a la excelencia operativa y representación legal robusta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-slate-900 to-slate-950 p-8 rounded-3xl border border-slate-800">
+                    <h4 class="text-lg font-bold text-white mb-6 flex items-center">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-brand-400 mr-2"></i> Datos Corporativos
+                    </h4>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex justify-between border-b border-slate-800 pb-3">
+                            <span class="text-slate-500">Régimen Jurídico</span>
+                            <span class="font-medium">Sociedad Anónima de Capital Variable</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-800 pb-3">
+                            <span class="text-slate-500">Duración</span>
+                            <span class="font-medium">Indefinida</span>
+                        </li>
+                        <li class="flex justify-between border-b border-slate-800 pb-3">
+                            <span class="text-slate-500">Administrador Único</span>
+                            <span class="font-medium">Luis Lagarde Vázquez</span>
+                        </li>
+                        <li class="flex justify-between pb-1">
+                            <span class="text-slate-500">Comisario</span>
+                            <span class="font-medium">David Valencia Carbonell</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-400 mb-3">Conectemos</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">¿Listo para llevar tu proyecto al siguiente nivel?</h3>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto">
+                Ponte en contacto con nuestro equipo directivo y técnico para evaluar tus requerimientos y diseñar la solución ideal.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:contacto@nexoar.com" class="px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-all shadow-xl shadow-brand-600/20 inline-flex items-center">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Enviar Correo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2026 NEXOAR S.A. de C.V. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
